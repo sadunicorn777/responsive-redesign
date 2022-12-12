@@ -43,7 +43,7 @@ function App() {
 
               <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', height: '30vh'}}>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
-                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: '30vh', overflow: 'scroll'}}>
+                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Picking a Webpage</div>
 
 
@@ -64,9 +64,10 @@ function App() {
                   clickedMarginTop="-50vh"
                   imgHeight="50vh"
                   imgWidth="45vw"
+                  source="zara"
                 />
                 </div>
-                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: '30vh', overflow: 'scroll'}}>
+                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Finding Problems</div>
 
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
@@ -106,7 +107,7 @@ user, when used under specified conditions.</p>
                   </div>
                   </div>
                 </div>
-                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: '30vh', overflow: 'scroll'}}>
+                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Accessibility</div>
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
                   <p>
@@ -154,27 +155,28 @@ user, when used under specified conditions.</p>
 
               <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', height: '30vh'}}>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
-                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: '30vh', overflow: 'scroll'}}>
+                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Low Fidelity Wireframing</div>
 
 
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
-                    <p>Text</p>
+                    <p>I created low-fidelity wireframes adapted for a mobile screen, tablet screen, and desktop screen. The wireframes seek to amend each of the problems enumerated in the previous section.</p>
 
                       
                   </div>
                 </div>
                 <ExpandingPhoto 
-                  text="Click for a screenshot of Zara's site" 
+                  text="Click to view to Lo-fi prototypes" 
                   width="17vw"
                   clickedHeight="60vh"
                   clickedWidth="50vw"
                   clickedMarginTop="-50vh"
                   imgHeight="50vh"
                   imgWidth="45vw"
+                  source="lofi"
                 />
                 </div>
-                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: '30vh', overflow: 'scroll'}}>
+                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Style Guide</div>
 
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
@@ -183,7 +185,7 @@ user, when used under specified conditions.</p>
 
                   </div>
                 </div>
-                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: '30vh', overflow: 'scroll'}}>
+                <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Accessibility</div>
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
                   <p>Text</p>

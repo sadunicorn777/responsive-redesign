@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from './Image'
 
 export const ExpandingPhoto = (props) => {
     const [clicked, setClicked] = React.useState(false)
@@ -10,6 +11,7 @@ export const ExpandingPhoto = (props) => {
     const clickedStyle = {
         backgroundColor: '#FFB0E2', height: props.clickedHeight, width: props.clickedWidth, borderRadius: '2vw', marginLeft: '0.3vw', border: 'none', marginTop: props.clickedMarginTop, position: 'absolute', filter: 'drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.3))'
     }
+    
 
 
     return (
@@ -31,7 +33,7 @@ export const ExpandingPhoto = (props) => {
             >
                 {clicked ? 
                 <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start'}}><div style={{color: 'white', padding: '1vw', fontSize: '1vw'}}>✖️</div>
-                <img style={{height: props.imgHeight, width: props.imgWidth, paddingTop: "5vh"}} src={require("./images/zara.png")} /></div> : null
+                <Image height={props.imgHeight} width={props.imgWidth} source={props.source} /></div> : null
                 }
             </div>
         </div>
