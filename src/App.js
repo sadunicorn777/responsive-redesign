@@ -249,6 +249,20 @@ user, when used under specified conditions.</p>
 
               <div style={{fontSize: '1.5vw', fontFamily: 'Work Sans'}}>📲 Part 3: Responsive Redesign</div>
 
+              <div style={{fontSize: '0.9vw', lineHeight: '1.3vw', fontFamily: 'Work Sans'}}>
+              <div class="m-spacer" />
+                This is the final website in action! Watch the screen recording to see how it behaves when resized. To vist the website yourself you can check it out <a href="http://sadunicorn777.github.io/zara2">here</a>. 
+                <div class="m-spacer" />
+                To navigate this coded protoype, you may click the <acc>Woman</acc> button to view the categories under "Woman", <acc>New Sensuality</acc> to view listings, the double arrow icon to collapse the bottom menu, and the <acc>Home</acc> button to return to the homepage.
+              </div>
+
+              <div class="m-spacer" />
+
+              <video style={{width: "50vw"}} autoplay="true" controls="controls" src={require("./images/demo.mov")}></video>
+
+              <div class="spacer" />
+              <div class="spacer" />
+
               {/* ALL WHITE BOX CONTENTS BEFORE HERE */}
 
             </div>
