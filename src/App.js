@@ -12,6 +12,28 @@ function App() {
     });
    }, []);
 
+   const images1 = ["zara"]
+   const caption1 = ["This is a screenshot from Zara's website. To view the entire website, head to Zara.com"]
+   const a1 = [""]
+
+   const images2 = ["lofi", "lofi2"]
+   const caption2 = ["Desktop, tablet, and mobile prototypes of the home page", "Desktop, tablet, and mobile prototypes of the shopping page"]
+   const a2 = ["", ""]
+
+   const images3 = ["styleguide"]
+   const caption3 = ["Style and branding guide"]
+   const a3 = [""]
+
+   const images4 = ["desktop1", "desktop2", "desktop3", "mobile", "tablet"]
+   const caption4 = ["Desktop homepage", "Desktop homepage: after link clicked", "Desktop shopping page", "Mobile homepage, mobile homepage after link clicked, mobile shopping page", "Tablet homepage, tablet homepage after link clicked, tablet shopping page"]
+   const a4 = [
+     "Everything will be stored in a flexbox container, including the background image whose size will occupy the entire screen. Elements will be formatted with absolute positioning to be overlaid on top of one another. The bottom bar will be around 20 or 30 vh and use compartmentalized flexbox positioning to format the words, using the space-between attribute. The top attributes (Zara header and two icons) will be formatted using flexbox space-between.", 
+     "The bottom bar is expanded by increasing its height to a greater portion of the screen size. Textual elements are stored using flexbox space-between. The bottom bar will be controlled by a React state so it will know whether it's expanded or not.", 
+     "Listings will be stored using flex-wrap to place them into a grid. Each individual listing will be stored using a flexbox column.", 
+     "The tablet version is adapted directly from the laptop. Because every element, even the texts, are sized relative to the screen size, the design will be responsive. NOTE: Elements should be sized relative to the screen width specifically, unless they are directly intended to take up a portion of the height. This is because tablet proportions differ from the laptop in the width more so than the height.", 
+     "Mobile layout is also adapted from the laptop and tablet. The same rules apply about resizing elements based on the screen width."
+  ]
+
   return (
     <div className="App">
         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
@@ -35,7 +57,8 @@ function App() {
                 The goal of this assignment was to practice the workflow of <acc>redesigning a simple website</acc>. The process involved <acc>analyzing and identifying flaws</acc> in an existing interface, creating <acc>low-fidelity</acc> and <acc>high-fidelity prototypes</acc> for various screen sizes, and <acc>building a responsive website</acc> based on those prototypes.
               </div>
 
-              <div class="m-spacer" />
+              <div class="spacer" />
+              <div class="spacer" />
 
               <div style={{fontSize: '1.5vw', fontFamily: 'Work Sans'}}>🔍 Part 1: Identifying Usability Problems</div>
 
@@ -59,12 +82,10 @@ function App() {
                 <ExpandingPhoto 
                   text="Click for a screenshot of Zara's site" 
                   width="17vw"
-                  clickedHeight="60vh"
-                  clickedWidth="50vw"
                   clickedMarginTop="-50vh"
-                  imgHeight="50vh"
-                  imgWidth="45vw"
-                  source="zara"
+                  source={images1}
+                  caption={caption1}
+                  annotation={a1}
                 />
                 </div>
                 <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
@@ -74,7 +95,7 @@ function App() {
 
                     
                     <p><i><b>Usability.</b></i> The capability of the software product to be 
-<pacc>understood</pacc>, <pacc>learned</pacc>, <pacc>used</pacc> and <pacc>attractive</pacc> to the 
+ <pacc>understood</pacc>, <pacc>learned</pacc>, <pacc>used</pacc> and <pacc>attractive</pacc> to the 
 user, when used under specified conditions.</p>
 
 <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
@@ -166,32 +187,67 @@ user, when used under specified conditions.</p>
                   </div>
                 </div>
                 <ExpandingPhoto 
-                  text="Click to view to Lo-fi prototypes" 
+                  text="Click to view the Lo-fi prototypes" 
                   width="17vw"
-                  clickedHeight="60vh"
-                  clickedWidth="50vw"
                   clickedMarginTop="-50vh"
-                  imgHeight="50vh"
-                  imgWidth="45vw"
-                  source="lofi"
+                  source={images2}
+                  caption={caption2}
+                  annotation={a2}
                 />
                 </div>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
                 <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
                   <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Style Guide</div>
 
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
 
-                  <p>Text</p>
+                  <p>Before hi-fi prototyping, I created a visual design style guide in Figma that displays the main colors, typography, and reusable components' different states (buttons on hover, click, etc).</p>
+
+                  
 
                   </div>
+                  
+                  </div>
+
+                  <ExpandingPhoto 
+                  text="Click to view the Style guide" 
+                  width="17vw"
+                  clickedMarginTop="-70vh"
+                  clickedMarginLeft="-20vw"
+                  source={images3}
+                  caption={caption3}
+                  annotation={a3}
+                />
+                  
                 </div>
+                
+                <div style={{display: 'flex', flexDirection: 'column'}}>
                 <div style={{width: '17vw', padding: '1vw', border: '1px solid black', borderRadius: 20, height: 'auto', maxHeight: '30vh', overflow: 'scroll'}}>
-                  <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ Accessibility</div>
+                  <div style={{fontSize: '1.15vw', fontFamily: 'Work Sans'}}>➡️ High Fidelity Prototype</div>
                   <div style={{fontSize: '0.8vw', lineHeight: '1.2vw', fontFamily: 'Work Sans'}}>
-                  <p>Text</p>
+                  <p>Using Figma, I then create a total of 3 high-fidelity prototypes of one screen, one for each of the screen sizes (mobile, tablet, desktop). You can visit the actual Figma file <a href="https://www.figma.com/file/6PyikcgtQ8dwi13Bm0ui57/Responsive-Redesign?node-id=0%3A1&t=n1RlCFNppykP9mNd-1">here</a>. </p>
                 </div>
+                </div>
+                <ExpandingPhoto 
+                  text="Click to view the Hi-fi prototypes" 
+                  width="17vw"
+                  clickedMarginTop="-70vh"
+                  clickedMarginLeft="-50vw"
+                  source={images4}
+                  caption={caption4}
+                  annotation={a4}
+                />
                 </div>
               </div>
+
+
+
+
+
+
+              <div class="spacer" />
+
+              <div style={{fontSize: '1.5vw', fontFamily: 'Work Sans'}}>📲 Part 3: Responsive Redesign</div>
 
               {/* ALL WHITE BOX CONTENTS BEFORE HERE */}
 

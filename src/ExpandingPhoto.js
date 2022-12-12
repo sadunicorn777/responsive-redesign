@@ -9,7 +9,7 @@ export const ExpandingPhoto = (props) => {
     }
 
     const clickedStyle = {
-        backgroundColor: '#FFB0E2', height: props.clickedHeight, width: props.clickedWidth, borderRadius: '2vw', marginLeft: '0.3vw', border: 'none', marginTop: props.clickedMarginTop, position: 'absolute', filter: 'drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.3))'
+        backgroundColor: '#FFB0E2', height: "70vh", width: "65vw", borderRadius: '2vw', marginLeft: '0.3vw', border: 'none', marginTop: props.clickedMarginTop, marginLeft: props.clickedMarginLeft, position: 'absolute', filter: 'drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.3))', overflow: 'scroll'
     }
     
 
@@ -33,7 +33,12 @@ export const ExpandingPhoto = (props) => {
             >
                 {clicked ? 
                 <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start'}}><div style={{color: 'white', padding: '1vw', fontSize: '1vw'}}>✖️</div>
-                <Image height={props.imgHeight} width={props.imgWidth} source={props.source} /></div> : null
+                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '60vw'}}>
+                    {props.source.map((image, index) => 
+                        <Image source={image} caption={props.caption[index]} annotation={props.annotation[index]} key={index} />
+                    )}
+                </div>
+                </div> : null
                 }
             </div>
         </div>
